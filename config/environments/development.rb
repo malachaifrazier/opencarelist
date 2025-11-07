@@ -81,5 +81,4 @@ Rails.application.configure do
   # If using a Vagrant VM for development, allow the host machine to see the
   # detailed exceptions provided by the better-errors gem
   BetterErrors::Middleware.allow_ip! "10.0.2.2"
-
 end
