@@ -7,3 +7,9 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+#
+# Seed the OpenCareList data
+#   OpenCareList import
+OpenCareList::Import::MasterCsvImporter.new(
+  csv_path: Rails.root.join("data/opencarelist/opencarelist_clean.csv")
+).call
